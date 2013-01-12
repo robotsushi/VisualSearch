@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+
+    @* Main Content Wrapper *@
+    <body class="MainContentWrapper">
+
+        <div class="SelectedUnvTitle">ROOT UNIVERSE</div>
+
+        @* Search List Wrapper *@
+        <div class="SearchListWrapper">
+            <input class="SearchBox" type="text" />
+            <div class="SearchList">
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+                <div class="SearchListItemWrapper">Search Result</div>
+            </div>
+        </div>
+
+        @* ChildContentWrapper *@
+        <div class="ChildContentWrapper">
+
+            @RenderBody()
+
+        </div>
+
+        @* Footer Menu *@
+        <footer class="FooterMenuWrapper">
+
+            <div class="FooterLogo">
+            </div>
+
+            <div class="FooterBtn StatBtn">
+                <div class="FooterBtnLbl">
+                    ADD A FILTER
+                </div>
+                <div class="FooterIcon PlusIcon"></div>
+            </div>
+
+            <div class="StatisticFilterMenuWrapper">
+                <div class="FooterTitle">
+                    STAT FILTER
+                </div>                
+
+                <select class="StatList">
+                    <option value="stddev">STD. DEV.</option>
+                    <option value="someValue">STATISTIC</option>
+                    <option value="someValue">STATISTIC</option>
+                    <option value="someValue">STATISTIC</option>
+                </select>
+
+                <div class="FilterSelectionWrapper">
+                    <div class="FilterOption SelectedOption" id="GreaterThanOption">GREATER</div>
+                    <div class="FilterOption" id="LessThanOption">LESS</div>
+                </div>
+
+                <input type="text" class="StatValue" value="17%" />
+
+                <div class="FooterTitle ApplyBtn">
+                    APPLY
+                </div>     
+
+            </div>
+
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/visualSearch.ui.js" type="text/javascript"></script>
+    </body>
+</html>

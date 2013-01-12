@@ -1,0 +1,267 @@
+﻿html
+{
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI Light", Verdana;
+}
+
+body
+{
+    background-color: #fff; 
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+header, footer, hgroup,
+nav, section
+{
+    display: block;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.clear-fix:after
+{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/******************* Main Styles ********************/
+
+.MainContentWrapper
+{
+    height: 100%;
+}
+
+.ChildContentWrapper
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.SelectedUnvTitle
+{
+    font-size: 3em;
+    margin: 0px auto;
+    width: 250px;
+    color: #666;
+    background-color: #fff;
+}
+
+/******************* End Main Styles ********************/
+
+/******************* Footer Styles ********************/
+
+.FooterMenuWrapper
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 110px;
+    background-color: #ccc; 
+}
+
+.FooterLogo
+{
+    width: 226px;
+    height: 53px;
+    background-repeat: no-repeat;
+    background-image: url(/Images/EvestmentPerTrac.png);
+    padding: 5px 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    border-right: 2px solid #949393;
+}
+
+.FooterBtn
+{
+    background-color: #8a8888;
+    position: absolute; 
+    top: 0px;
+    bottom: 0px;
+    padding: 15px;
+    color: #fff;
+    border-left: 1px solid white;
+    width: 200px;
+}
+
+.FooterBtn:hover
+{
+    background-color: #666;
+}
+
+.FooterBtnLbl, .FooterIcon
+{
+    float: left;
+}
+
+.FooterTitle
+{
+    font-size: 2em;
+    color: #fff;
+}
+
+.StatBtn
+{
+    right: 0px;
+}
+
+.FooterBtnLbl
+{
+    width: 100px;
+    font-size: 2em;
+}
+
+.FooterIcon
+{
+    width: 64px;
+    height: 64px;
+    padding: 15px;
+    background-position: center;
+}
+
+.PlusIcon
+{
+    background-repeat: no-repeat;
+    background-image: url(/Images/Plus.png);
+    
+}
+
+.StatisticFilterMenuWrapper
+{
+    width: 210px;
+    height: 230px;
+    position: absolute;
+    top: -251px;
+    right: 0px;
+    background-color: #8a8888;
+    color: #fff;
+    padding: 10px;
+    display: none;
+}
+
+.StatList
+{
+    width: 100%;
+    height: 35px;
+    font-family: "Segoe UI";
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.FilterSelectionWrapper, .StatValue
+{
+    float: left;    
+}
+
+.FilterOption
+{
+    font-size: 1.4em;    
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.FilterOption:hover, .ApplyBtn:hover, .SelectedOption
+{
+    background-color: #0076C0;
+}
+
+.StatValue
+{
+    background-color: transparent;
+    font-size: 2.5em;
+    width: 80px;
+    height: 75px;
+    border: none;
+    border-left: 1px solid #ccc;    
+    color: #fff;
+    padding: 5px;
+    outline: none;    
+}
+
+.ApplyBtn
+{
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    padding: 5px 20px;
+}
+
+/******************* End Footer Styles ********************/
+
+/******************* Search List Styles ********************/
+
+.SearchListWrapper
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 300px;
+    width: 200px; 
+    padding: 10px; 
+}
+
+.SearchBox
+{
+    width: 100%;
+    height: 1.5em;
+    color: #666; 
+    font-size: 1.2em;
+}
+
+.SearchList
+{
+    border: 1px solid #a4a2a2;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.SearchListItemWrapper
+{
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.SearchListItemWrapper:hover
+{
+    background-color: #0076C0;
+    color: #fff;
+}
+
+/******************* End Search List Styles ********************/
+
+/******************* Canvas Styles ********************/
+
+.SearchCanvas
+{
+    width: 800px;
+    height: 600px; 
+}
+
+/******************* Canvas Styles ********************/
+
+
+
